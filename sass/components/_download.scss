@@ -1,0 +1,100 @@
+.download {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    margin-right: 106px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &__button {
+        position: relative;
+        width: 18rem;
+        height: 4rem;
+        border: none;
+        background-color: $color-primary;
+        color: $color-white;
+        font-weight: 400;
+        font-size: 1.6rem;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 2.2rem;
+        cursor: pointer;
+        img {
+            width: 1.8rem;
+            height: 1.8rem;
+            position: absolute;
+            left: 1.6rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__description {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: $color-black;
+        margin-bottom: 10px;
+    }
+
+    &__versions {
+        font-size: 1.2rem;
+        color: $color-secondary;
+        font-weight: 400;
+    }
+    
+}
+
+.background-square-light {
+    position: absolute;
+
+    right: -250%;
+    top: 79%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 130rem;
+    height: 130rem;
+    background-color: #ABB6FF;
+    display: none;
+}
+
+
+.background-square-dark {
+    position: absolute;
+
+    right: -268%;
+    top: 79%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 130rem;
+    height: 130rem;
+    background-color: #202A46;
+    display: none;
+}
+
+.illustration {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 714px;
+    display: none;
+}
+
+@media (min-width: 1097px) {
+
+    .background-square-light {
+        right: -50%;
+        display: block;
+    }
+
+    .background-square-dark {
+        right: -59%;
+        display: block;
+    }
+
+    .illustration {
+        display: block;
+    }
+
+    .download {
+        margin-bottom: 0px;
+    }
+}

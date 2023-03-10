@@ -7,9 +7,15 @@
     text-align: center;
 
     &__button {
+        &:hover {
+            filter: brightness(1.1);
+        }
+        &:active {
+            filter:brightness(0.9);
+        }
         position: relative;
         width: 18rem;
-        height: 4rem;
+        height: 4.6rem;
         border: none;
         background-color: $color-primary;
         color: $color-white;
@@ -20,8 +26,8 @@
         margin-bottom: 2.2rem;
         cursor: pointer;
         img {
-            width: 1.8rem;
-            height: 1.8rem;
+            width: 2.4rem;
+            height: 2.4rem;
             position: absolute;
             left: 1.6rem;
             top: 50%;
@@ -72,10 +78,13 @@
 
 .illustration {
     position: absolute;
-    right: 2rem;
-    bottom: 2rem;
+    right: 0%;
+    bottom: 18%;
     width: 714px;
+    max-height: 450px;
     display: none;
+    z-index: 50;
+    object-fit: contain;
 }
 
 @media (min-width: 1097px) {

@@ -1,7 +1,36 @@
 .section-download {
-    height: calc(100vh - 10.4rem);
+    margin-top: 160px;
     padding: 4rem 0 0 4rem;
-    background-color: #DFE6EE;
+    background-color: $color-white;
     position: relative;
     overflow: hidden;
+}
+
+.logo {
+    height: 10rem;
+    object-fit: contain;
+    left: 50%;
+    top: 2.4rem;
+    position: absolute;
+    z-index: 20;
+}
+
+.background {
+ 
+    position: absolute;
+    right: 0px;
+}
+
+.background__primary {
+    height: 100VH;
+    z-index: 30;
+    fill: #3549CC;
+    top: 0;
+}
+
+.background__secondary {
+    height: 84.9vh;
+    fill: #202a46;
+    z-index: 40;
+    bottom: 0;
 }
